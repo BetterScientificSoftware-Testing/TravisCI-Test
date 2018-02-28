@@ -2,8 +2,15 @@ language: python
 python:
   - '2.7'
 before_script:
+  echo "-------------------------------------------------------"
+  mkdir Scripts
+  ls -ltr
+  cd Scripts
+  git clone https://github.com/betterscientificsoftware/Scripts.git Scripts/.
+  cd ..
   ls -ltr
 script: 
+  echo "-------------------------------------------------------"
   ./test.py
 
 
