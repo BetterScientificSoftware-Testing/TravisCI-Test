@@ -6,6 +6,8 @@ before_script:
   - ./setup.sh
 script: 
   - echo "----[ EXECUTE TEST ]----------------------------------"
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "true" ]; then echo "I AM A PULL REQUEST"; fi'
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then echo "I AM NOT A PULL REQUEST"; fi'
   - ./test.py
 
 
