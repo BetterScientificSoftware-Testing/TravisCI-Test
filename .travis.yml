@@ -1,2 +1,4 @@
 language: python
-script: test.py
+python:
+  - '2.7'
+script: ./test.py
