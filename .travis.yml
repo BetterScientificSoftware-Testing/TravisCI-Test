@@ -2,10 +2,8 @@ language: python
 python:
   - '2.7'
 before_script:
-  - echo "----[ GET TESTER ]------------------------------------"
   - ./setup.sh
 script: 
-  - echo "----[ EXECUTE TEST ]----------------------------------"
   - ./test.py
 
 
