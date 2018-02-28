@@ -4,7 +4,6 @@ python:
 before_script:
   ./setup.sh
 script: 
-  echo "-------------------------------------------------------"
   ./test.py
 
 
