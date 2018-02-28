@@ -13,7 +13,7 @@ fi
 
 cd Scripts
 
-if [ ! =d "Scripts" ]; then
+if [ ! -d "Scripts" ]; then
   echo "----[ Clone Scripts ]----"
   git clone https://github.com/betterscientificsoftware/Scripts.git
 else
